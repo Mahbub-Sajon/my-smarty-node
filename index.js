@@ -34,11 +34,12 @@ app.get('/user/:id', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-    console.log(req.body);
+   
     const user = req.body;
+    console.log(req.body);
     user.id = users.length + 1 ;
-    users.push(user)
-    res.send(user)
+    users.push(user);
+    res.send(user);
 });
 
 
